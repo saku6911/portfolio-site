@@ -1,0 +1,12 @@
+.mainVisualImg{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -10;
+  @media screen and (min-width:768px) { 
+    bottom: 0;
+    width: 70%;
+  }
+}
+

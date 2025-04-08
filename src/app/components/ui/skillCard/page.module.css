@@ -1,0 +1,9 @@
+.skillCardWrap{
+  display: grid;
+  grid-template-rows: 1fr 32px 128px 24px;
+  gap:8px;
+  width: 320px;
+  @media screen and (min-width:768px) { 
+    grid-template-rows: 1fr 32px 160px 24px;
+  }
+}
