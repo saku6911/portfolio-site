@@ -8,7 +8,7 @@ type ModalWindowProps = {
   modalClass: string;
   onAfterOpen: () => void;
   onRequestClose: () => void;
-  skillText: string;
+  skillText?: string;
 };
 
 export default function SkillModal({
@@ -16,7 +16,7 @@ export default function SkillModal({
   modalClass,
   onAfterOpen,
   onRequestClose,
-  skillText = "",
+  skillText = "使用スキル",
 }: ModalWindowProps) {
  
   const skillList = skillText.split("/").filter(Boolean);
