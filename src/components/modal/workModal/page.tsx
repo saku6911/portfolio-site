@@ -50,12 +50,12 @@ export default function WorkModal({
         <h2 className="text-xl font-bold mb-4">{title}</h2>
         <Img src={imgSrc} alt={imgAlt} className="w-full" loading="lazy"/>
         <ul className="flex flex-col gap-2 py-6">
-          <li><p className="font-medium">案件概要</p><p>{overview}</p></li>
-          <li><p className="font-medium">対応期間</p><p>{supportPeriod}</p></li>
-          <li><p className="font-medium">使用スキル</p><p>{useSkill}</p></li>
-          <li><p className="font-medium">対応人数</p><p>{number}</p></li>
-          <li><p className="font-medium">学習内容</p><p>{learning}</p></li>
-          <li><p className="font-medium">サイトURL</p><a href={site} className="hover:text-gray-400 transition duration-300">{site}</a></li>
+          <li><p className="font-bold">案件概要</p><p>{overview}</p></li>
+          <li><p className="font-bold">対応期間</p><p>{supportPeriod}</p></li>
+          <li><p className="font-bold">使用スキル</p><p>{useSkill}</p></li>
+          <li><p className="font-bold">対応人数</p><p>{number}</p></li>
+          <li><p className="font-bold">学習内容</p><p>{learning}</p></li>
+          <li><p className="font-bold">サイトURL</p><a href={site} className="hover:text-gray-400 transition duration-300">{site}</a></li>
         </ul>
         <button
           onClick={onRequestClose}

@@ -40,7 +40,11 @@ export default function Work() {
               350: {
                 slidesPerView: 1,
               },
-              1025: {
+              780: {
+                slidesPerView: 2,
+                spaceBetween: 32,
+              },
+              1200: {
                 slidesPerView: 3,
                 spaceBetween: 32,
               },

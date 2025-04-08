@@ -53,12 +53,12 @@ export default function WorkCard({
           setIsOpen(true);
           setModalClass("opacity-0 scale-95");
         }}
-        className="text-left max-w-sm rounded overflow-hidden shadow-lg transition-all duration-300 hover:translate-x-1 hover:translate-y-1 p-4 bg-white"
+        className=" text-left max-w-sm rounded overflow-hidden shadow-lg transition-all duration-300 hover:translate-x-1 hover:translate-y-1 p-4 bg-white"
       >
         <Img src={imgSrc} alt={imgAlt} className="w-full" />
         <div className="grid gap-4 px-6 py-4 items-center">
           <h3 className="font-bold text-xl h-14">{heading}</h3>
-          <p>
+          <p className="whitespace-pre-line">
             ・使用スキル
             <br />
             {skill}

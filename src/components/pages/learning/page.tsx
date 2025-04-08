@@ -22,18 +22,26 @@ export default function Learning() {
           <Swiper
             modules={[Navigation, Pagination]}
             navigation={true}
-            spaceBetween={150}
+            spaceBetween={24}
             slidesPerView={3}
             grabCursor={true} 
             pagination={{ clickable: true }}
-            className="h-120 w-full"
+            className="h-140 w-full"
             breakpoints={{
               350: {
                 slidesPerView: 1,
               },
-              1025: {
+              780: {
+                slidesPerView: 2,
+                spaceBetween: 32,
+              },
+              1200: {
                 slidesPerView: 3,
-              }
+                spaceBetween: 32,
+              },
+              1500: {
+                slidesPerView: 4,
+              },
               
             }}
           >
@@ -44,7 +52,8 @@ export default function Learning() {
         imgSrc={learning4} 
         imgAlt="ポートフォリオサイトの画像" 
         heading="ポートフォリオサイト" 
-        skill="TypeScript/React/TailwindCSS/Next.js/Figma" 
+        skill="TypeScript/React/TailwindCSS
+        Next.js/Figma/Vercel" 
         label="デザイン/コーディング"
         supportPeriod="2025年4月"
         overview="ポートフォリオサイトを作成した。"
@@ -55,7 +64,8 @@ export default function Learning() {
         imgSrc={learning1} 
         imgAlt="カレンダーウェブアプリの画像" 
         heading="カレンダーウェブアプリ" 
-        skill="TypeScript/React/CSS/Figma/Next.js/Vercel" 
+        skill="TypeScript/React/CSS/Figma
+        Next.js/Vercel" 
         label="デザイン/コーディング"
         supportPeriod="2025年4月"
         overview="動画教材を見終えた後、自分で考えたカレンダーアプリを作成した"
@@ -66,7 +76,8 @@ export default function Learning() {
         imgSrc={learning2} 
         imgAlt="TODOアプリの画像" 
         heading="TODOアプリ" 
-        skill="JavaScript/React/CSS/Next.js/Vercel" 
+        skill="JavaScript/React
+        CSS/Next.js/Vercel" 
         label="コーディング"
         supportPeriod="2025年4月"
         overview="Udemyの動画教材内で作成したTODOアプリをデプロイした"
@@ -77,7 +88,8 @@ export default function Learning() {
         imgSrc={learning3} 
         imgAlt="イベントサイトの画像" 
         heading="イベントサイト" 
-        skill="TypeScript/React/CSS/Next.js/Figma/Vercel" 
+        skill="TypeScript/React/CSS
+        Next.js/Figma/Vercel" 
         label="デザイン/コーディング"
         supportPeriod="2024年6月"
         overview="会社の夏イベントで謎解きを行うため、その答えを入力するサイトを作成した。"
