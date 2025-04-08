@@ -26,7 +26,7 @@ export default function Profile() {
       </div></Fade>
       </div>
       <div className="mx-auto w-4/6 md:my-auto md:w-2/6 2xl:w-1/6 md:mx-0">
-     <Img src={profile} alt="プロフィール文の横に表示される女性のイラスト"/>
+     <Img src={profile} alt="プロフィール文の横に表示される女性のイラスト" loading="lazy"/>
    </div></div>
   );
 }

@@ -34,6 +34,7 @@ export default function Home() {
           <Img
             src={mainVisual}
             alt="メインビジュアルに表示れる人のイラスト画像"
+            priority
           />
         </div>
       </div>

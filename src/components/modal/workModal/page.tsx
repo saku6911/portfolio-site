@@ -48,7 +48,7 @@ export default function WorkModal({
     >
       <div>
         <h2 className="text-xl font-bold mb-4">{title}</h2>
-        <Img src={imgSrc} alt={imgAlt} className="w-full" />
+        <Img src={imgSrc} alt={imgAlt} className="w-full" loading="lazy"/>
         <ul className="flex flex-col gap-2 py-6">
           <li><p className="font-medium">案件概要</p><p>{overview}</p></li>
           <li><p className="font-medium">対応期間</p><p>{supportPeriod}</p></li>
