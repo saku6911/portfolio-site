@@ -1,17 +1,14 @@
 "use client";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
-import learning1 from "../../../../public/learning1.webp";
-import learning2 from "../../../../public/learning2.webp";
-import learning3 from "../../../../public/learning3.webp";
-import learning4 from "../../../../public/learning4.webp";
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination'; 
+import learning1 from "../../../public/learning1.webp";
+import learning2 from "../../../public/learning2.webp";
+import learning3 from "../../../public/learning3.webp";
+import learning4 from "../../../public/learning4.webp";
 import Heading from "../../ui/heading/page";
 import WorkCard from "../../ui/workCard/page";
 import { Fade } from "react-awesome-reveal";

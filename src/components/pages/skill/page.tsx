@@ -2,9 +2,9 @@
 
 import Heading from "../../ui/heading/page";
 import SkillCard from "../../ui/skillCard/page";
-import skillFe from "../../../../public/skillFe.webp"
-import skillDe from "../../../../public/skillDe.webp"
-import skillCom from "../../../../public/skillCommunication.webp"
+import skillFe from "../../../public/skillFe.webp"
+import skillDe from "../../../public/skillDe.webp"
+import skillCom from "../../../public/skillCommunication.webp"
 import { Fade } from "react-awesome-reveal";
 
 export default function Skill() {

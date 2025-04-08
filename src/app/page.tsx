@@ -1,14 +1,13 @@
-"use client";
 
 import Img from "next/image";
 import mainVisual from "../public/mainVisual.webp";
-import Header from "./components/layout/header/page";
-import Footer from "./components/layout/footer/page";
+import Header from "../components/layout/header/page";
+import Footer from "../components/layout/footer/page";
 import styles from "./page.module.css";
-import Work from "./components/pages/work/page";
-import Learning from "./components/pages/learning/page";
-import Profile from "./components/pages/profile/page";
-import Skill from "./components/pages/skill/page";
+import Work from "../components/pages/work/page";
+import Learning from "../components/pages/learning/page";
+import Profile from "../components/pages/profile/page";
+import Skill from "../components/pages/skill/page";
 import { Fade } from "react-awesome-reveal";
 
 export default function Home() {

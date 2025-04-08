@@ -1,7 +1,7 @@
 "use client";
 
 import Heading from "../../ui/heading/page";
-import profile from "../../../../public/profile.webp";
+import profile from "../../../public/profile.webp";
 import Img from "next/image";
 import { Fade } from "react-awesome-reveal";
 

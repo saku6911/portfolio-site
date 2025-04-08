@@ -3,7 +3,7 @@
 import React from "react";
 import Modal from "react-modal";
 import Img, { StaticImageData } from "next/image";
-import work1 from "../../../../public/work1.webp";
+import work1 from "../../../public/work1.webp";
 
 type ModalWindowProps = {
   isOpen: boolean;

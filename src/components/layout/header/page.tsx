@@ -1,6 +1,6 @@
 import Img from "next/image";
 import Link from "next/link";
-import logoImage from "../../../../public/logo.webp";
+import logoImage from "../../../public/logo.webp";
 import DrawerMenu from "../menu/page"
 
 export default function Header() {
