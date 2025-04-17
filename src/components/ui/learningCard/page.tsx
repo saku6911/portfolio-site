@@ -5,7 +5,7 @@ import Modal from "react-modal";
 import Img, { StaticImageData } from "next/image";
 import WorkModal from "../../modal/workModal/page";
 
-export default function WorkCard({
+export default function LearningCard({
   imgSrc,
   imgAlt,
   heading,
@@ -53,7 +53,7 @@ export default function WorkCard({
           setIsOpen(true);
           setModalClass("opacity-0 scale-95");
         }}
-        className=" text-left max-w-sm rounded overflow-hidden shadow-lg transition-all duration-300 hover:translate-x-1 hover:translate-y-1 p-4 bg-white"
+        className=" text-left max-w-sm h-5/6 rounded overflow-hidden shadow-lg transition-all duration-300 hover:translate-x-1 hover:translate-y-1 p-4 bg-white"
       >
         <Img src={imgSrc} alt={imgAlt} className="w-full" />
         <div className="grid gap-4 px-6 py-4 items-center">
