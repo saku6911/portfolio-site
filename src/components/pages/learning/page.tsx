@@ -52,7 +52,7 @@ export default function Learning() {
                   imgSrc={learning5}
                   imgAlt="音楽アプリの画像"
                   heading="音楽WEBアプリ"
-                  skill="TypeScript/React/TailwindCSS
+                  skill="JavaScript/React/TailwindCSS
        Vite/SpotifyAPI/Axios"
                   label="フロント/API"
                   supportPeriod="2025年4月"
