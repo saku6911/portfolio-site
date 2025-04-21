@@ -9,6 +9,7 @@ import learning1 from "../../../public/learning1.webp";
 import learning2 from "../../../public/learning2.webp";
 import learning3 from "../../../public/learning3.webp";
 import learning4 from "../../../public/learning4.webp";
+import learning5 from "../../../public/learning5.webp";
 import Heading from "../../ui/heading/page";
 import { Fade } from "react-awesome-reveal";
 import LearningCard from "@/components/ui/learningCard/page";
@@ -46,6 +47,21 @@ export default function Learning() {
           <div className="w-4/5 mx-auto py-15 md:py-24">
             <Heading headingEn="Learning" headingJa="自己学習内容" />
             <div className="flex justify-between gap-14 max-xl:flex-col max-xl:items-center">
+              <SwiperSlide>
+                <LearningCard
+                  imgSrc={learning5}
+                  imgAlt="音楽アプリの画像"
+                  heading="音楽WEBアプリ"
+                  skill="TypeScript/React/TailwindCSS
+       Vite/SpotifyAPI/Axios"
+                  label="フロント/API"
+                  supportPeriod="2025年4月"
+                  overview="動画教材（Udemy）を見ながら曲の検索ができる音楽アプリを作成した。"
+                  number="1人"
+                  learning="世の中にはいろいろなAPIが公開されていて、それをもとに自分でアプリが開発できることを学んだ"
+                  site="https://music-app-eight-delta.vercel.app/"
+                />
+              </SwiperSlide>
               <SwiperSlide>
                 <LearningCard
                   imgSrc={learning4}
