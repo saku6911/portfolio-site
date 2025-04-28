@@ -10,6 +10,7 @@ import learning2 from "../../../public/learning2.webp";
 import learning3 from "../../../public/learning3.webp";
 import learning4 from "../../../public/learning4.webp";
 import learning5 from "../../../public/learning5.webp";
+import learning6 from "../../../public/learning6.webp";
 import Heading from "../../ui/heading/page";
 import { Fade } from "react-awesome-reveal";
 import LearningCard from "@/components/ui/learningCard/page";
@@ -47,6 +48,21 @@ export default function Learning() {
           <div className="w-4/5 mx-auto py-15 md:py-24">
             <Heading headingEn="Learning" headingJa="自己学習内容" />
             <div className="flex justify-between gap-14 max-xl:flex-col max-xl:items-center">
+              <SwiperSlide>
+                <LearningCard
+                  imgSrc={learning6}
+                  imgAlt="React App 100 knockの画像"
+                  heading="React App 100 knock"
+                  skill="TypeScript/React/TailwindCSS
+       Next.js/Jotai"
+                  label="フロント"
+                  supportPeriod="2025年4月"
+                  overview="ReactAppを100個作る。"
+                  number="1人"
+                  learning="日々更新中。"
+                  site="https://react-app-100.vercel.app/"
+                />
+              </SwiperSlide>
               <SwiperSlide>
                 <LearningCard
                   imgSrc={learning5}
