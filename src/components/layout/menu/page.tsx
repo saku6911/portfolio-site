@@ -10,7 +10,10 @@ export default function DrawerMenu() {
       <Menu as="div" className="relative inline-block text-left">
         {({ open }) => (
           <>
-            <Menu.Button className="p-2">
+            <Menu.Button
+              className="p-2"
+              aria-label={open ? "メニューを閉じる" : "メニューを開く"}
+            >
               {open ? (
                 <XMarkIcon className="h-6 w-6" />
               ) : (
@@ -24,7 +27,7 @@ export default function DrawerMenu() {
                   <Menu.Item key={i}>
                     {({ active }) => (
                       <Link
-                        href={`#${label.toLowerCase()}`} 
+                        href={`#${label.toLowerCase()}`}
                         className={`block px-4 py-2 text-sm ${
                           active ? "bg-gray-100" : ""
                         }`}
