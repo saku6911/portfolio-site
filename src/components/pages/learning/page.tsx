@@ -11,6 +11,8 @@ import learning3 from "../../../public/learning3.webp";
 import learning4 from "../../../public/learning4.webp";
 import learning5 from "../../../public/learning5.webp";
 import learning6 from "../../../public/learning6.webp";
+import learning7 from "../../../public/learning7.webp";
+import learning8 from "../../../public/learning8.webp";
 import Heading from "../../ui/heading/page";
 import { Fade } from "react-awesome-reveal";
 import LearningCard from "@/components/ui/learningCard/page";
@@ -48,6 +50,35 @@ export default function Learning() {
           <div className="w-4/5 mx-auto py-15 md:py-24">
             <Heading headingEn="Learning" headingJa="自己学習内容" />
             <div className="flex justify-between gap-14 max-xl:flex-col max-xl:items-center">
+              <SwiperSlide>
+                <LearningCard
+                  imgSrc={learning8}
+                  imgAlt="ポケモン図鑑の画像"
+                  heading="ポケモン図鑑"
+                  skill="TypeScript/React/TailwindCSS
+       Vite/Jotai/Firebase/PokeAPI"
+                  label="デザイン"
+                  supportPeriod="2025年5月"
+                  overview="ユーザーごとにお気に入りのポケモン図鑑を作れる"
+                  number="1人"
+                  learning="Firebaseを初めて使用したので、ログイン認証やユーザーごとのDB格納等勉強になった。また、PokeAPIのような膨大なDBからデータを取得することもいい勉強になった。"
+                  site="https://jyakee-stepup-app.vercel.app/"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <LearningCard
+                  imgSrc={learning7}
+                  imgAlt="マフラータオルデザインの画像"
+                  heading="マフラータオルデザイン"
+                  skill="Illustrator"
+                  label="デザイン"
+                  supportPeriod="2025年5月"
+                  overview="Music Fesのノベルティ（マフラータオル）デザイン"
+                  number="1人"
+                  learning="マフラータオルのデザインは初めてだったので、タオルに印刷するときの注意点（特定の色がきれいに出ないかも）等勉強になった。"
+                  site=""
+                />
+              </SwiperSlide>
               <SwiperSlide>
                 <LearningCard
                   imgSrc={learning6}
