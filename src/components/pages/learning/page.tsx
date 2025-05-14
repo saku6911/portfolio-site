@@ -57,7 +57,7 @@ export default function Learning() {
                   heading="ポケモン図鑑"
                   skill="TypeScript/React/TailwindCSS
        Vite/Jotai/Firebase/PokeAPI"
-                  label="デザイン"
+                  label="フロント/API/デザイン"
                   supportPeriod="2025年5月"
                   overview="ユーザーごとにお気に入りのポケモン図鑑を作れる"
                   number="1人"
