@@ -61,7 +61,7 @@ export default function Learning() {
                   supportPeriod="2025年5月"
                   overview="ユーザーごとにお気に入りのポケモン図鑑を作れる"
                   number="1人"
-                  learning="Firebaseを初めて使用したので、ログイン認証やユーザーごとのDB格納等勉強になった。また、PokeAPIのような膨大なDBからデータを取得することもいい勉強になった。"
+                  learning="Firebaseを初めて使用したので、ログイン認証やユーザーごとのDB格納等勉強になった。また、PokeAPIのような膨大なDBからデータを取得することもいい勉強になった。[テストアカウント：test@gmail.com PASS:test1234]"
                   site="https://jyakee-stepup-app.vercel.app/"
                 />
               </SwiperSlide>
