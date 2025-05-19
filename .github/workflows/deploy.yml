@@ -34,4 +34,4 @@ jobs:
       - name: Deploy to Vercel
         if: success()
         run: |
-          curl -X POST "https://api.vercel.com/v1/integrations/deploy/prj_abc123/def456"
+          curl -X POST "https://api.vercel.com/v1/integrations/deploy/prj_wR3yaC2FLf3wd1CCkeANa9S15Ewn/rPn8yjd3N3"
