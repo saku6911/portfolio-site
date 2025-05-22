@@ -1,91 +1,55 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import Modal from "react-modal";
-import Img, { StaticImageData } from "next/image";
-import WorkModal from "../../modal/workModal/page";
+import React from "react";
+import Img from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function LearningCard({
+  id,
   imgSrc,
   imgAlt,
   heading,
   skill,
-  label,
-  supportPeriod,
-  overview,
-  number,
-  learning,
-  site,
+  categories,
 }: {
-  imgSrc: StaticImageData;
+  id: string;
+  imgSrc: string;
   imgAlt: string;
   heading: string;
   skill: string;
-  label: string;
-  supportPeriod: string;
-  overview: string;
-  number: string;
-  learning: string;
-  site: string;
+  categories: { id: string; name: string }[];
 }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const [modalClass, setModalClass] = useState("opacity-0 scale-95");
-
-  useEffect(() => {
-    Modal.setAppElement("body");
-  }, []);
-
-  const handleAfterOpen = () => {
-    setModalClass("opacity-100 scale-100");
-  };
-
-  const handleClose = () => {
-    setModalClass("opacity-0 scale-95");
-    setTimeout(() => {
-      setIsOpen(false);
-    }, 300);
+  const router = useRouter();
+  const handleClick = () => {
+    router.push(`/learning/${id}`);
   };
 
   return (
-    <>
-      <button
-        onClick={() => {
-          setIsOpen(true);
-          setModalClass("opacity-0 scale-95");
-        }}
-        className=" text-left max-w-sm h-5/6 rounded overflow-hidden shadow-lg transition-all duration-300 hover:translate-x-1 hover:translate-y-1 p-4 bg-white"
-      >
-        <Img src={imgSrc} alt={imgAlt} className="w-full" />
-        <div className="grid gap-4 px-6 py-4 items-center">
-          <h3 className="font-bold text-xl h-14">{heading}</h3>
-          <p className="whitespace-pre-line">
-            ・使用スキル
-            <br />
-            {skill}
-          </p>
-        </div>
-        <div className="px-6 pt-4 pb-2">
-          <label className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-            {label}
-          </label>
-        </div>
-      </button>
-
-      <WorkModal
-        isOpen={isOpen}
-        modalClass={modalClass}
-        onAfterOpen={handleAfterOpen}
-        onRequestClose={handleClose}
-        title={heading}
-        useSkill={skill}
-        imgSrc={imgSrc}
-        imgAlt={imgAlt}
-        supportPeriod={supportPeriod}
-        overview={overview}
-        number={number}
-        learning={learning}
-        site={site}
+    <button
+      onClick={handleClick}
+      className="text-left max-w-sm rounded h-[450] overflow-hidden shadow-lg transition-all duration-150 hover:translate-x-1 hover:translate-y-1 p-4 bg-white"
+    >
+      <Img
+        src={imgSrc}
+        alt={imgAlt}
+        className="w-full h-auto"
+        width={352}
+        height={211}
       />
-    </>
+      <div className="grid gap-4 px-6 py-4 items-center">
+        <h3 className="font-bold text-xl h-14">{heading}</h3>
+        <p className="whitespace-pre-line">{skill}</p>
+      </div>
+      <div className="px-6 pt-4 pb-2">
+        {categories?.map((category) => (
+          <label
+            key={category.id}
+            className="inline-block bg-gray-200 rounded-sm px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+          >
+            {category.name}
+          </label>
+        ))}
+      </div>
+    </button>
   );
 }

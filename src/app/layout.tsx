@@ -1,11 +1,22 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Noto_Sans_JP } from "next/font/google";
 
-
+const notoSansJP = Noto_Sans_JP({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Portfolio Site",
-  description: " 2025 Shiratori Portfolio Site",
+  description: "2025 Shiratori Portfolio Site",
+  keywords: [
+    "Portfolio Site",
+    "フロントエンドエンジニア",
+    "デザイナー",
+    "白取優花",
+  ],
 };
 
 export default function RootLayout({
@@ -14,15 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
-      <head>
-      <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
-          rel="preconnect"
-        />
-      </head>
-      <body
-        className="font-sans text-gray-900">
+    <html lang="ja" className={notoSansJP.className}>
+      <body className="text-gray-900">
         {children}
         <div id="modal-root" />
       </body>

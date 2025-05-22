@@ -2,8 +2,7 @@
 
 import React from "react";
 import Modal from "react-modal";
-import Img, { StaticImageData } from "next/image";
-import work1 from "../../../public/work1.webp";
+import Img from "next/image";
 
 type ModalWindowProps = {
   isOpen: boolean;
@@ -12,13 +11,13 @@ type ModalWindowProps = {
   onRequestClose: () => void;
   title?: string;
   useSkill?: string;
-  imgSrc: StaticImageData;
+  imgSrc: string;
   imgAlt: string;
-  supportPeriod:string;
-  overview:string;
-  number:string;
-  learning:string;
-  site:string;
+  supportPeriod: string;
+  overview: string;
+  number: string;
+  learning: string;
+  site: string;
 };
 
 export default function WorkModal({
@@ -28,13 +27,13 @@ export default function WorkModal({
   onRequestClose,
   title = "モーダルの中身",
   useSkill = "React",
-  imgSrc=work1,
-  imgAlt="",
-  supportPeriod="対応期間",
-  overview="案件概要",
-  number="対応人数",
-  learning="学習内容",
-  site="なし"
+  imgSrc = "test",
+  imgAlt = "",
+  supportPeriod = "対応期間",
+  overview = "案件概要",
+  number = "対応人数",
+  learning = "学習内容",
+  site = "なし",
 }: ModalWindowProps) {
   return (
     <Modal
@@ -48,14 +47,37 @@ export default function WorkModal({
     >
       <div>
         <h2 className="text-xl font-bold mb-4">{title}</h2>
-        <Img src={imgSrc} alt={imgAlt} className="w-full" loading="lazy"/>
+        <Img src={imgSrc} alt={imgAlt} className="w-full" loading="lazy" />
         <ul className="flex flex-col gap-2 py-6">
-          <li><p className="font-bold">案件概要</p><p>{overview}</p></li>
-          <li><p className="font-bold">対応期間</p><p>{supportPeriod}</p></li>
-          <li><p className="font-bold">使用スキル</p><p>{useSkill}</p></li>
-          <li><p className="font-bold">対応人数</p><p>{number}</p></li>
-          <li><p className="font-bold">学習内容</p><p>{learning}</p></li>
-          <li><p className="font-bold">サイトURL</p><a href={site} className="hover:text-gray-400 transition duration-300">{site}</a></li>
+          <li>
+            <p className="font-bold">案件概要</p>
+            <p>{overview}</p>
+          </li>
+          <li>
+            <p className="font-bold">対応期間</p>
+            <p>{supportPeriod}</p>
+          </li>
+          <li>
+            <p className="font-bold">使用スキル</p>
+            <p>{useSkill}</p>
+          </li>
+          <li>
+            <p className="font-bold">対応人数</p>
+            <p>{number}</p>
+          </li>
+          <li>
+            <p className="font-bold">学習内容</p>
+            <p>{learning}</p>
+          </li>
+          <li>
+            <p className="font-bold">サイトURL</p>
+            <a
+              href={site}
+              className="hover:text-gray-400 transition duration-300"
+            >
+              {site}
+            </a>
+          </li>
         </ul>
         <button
           onClick={onRequestClose}
