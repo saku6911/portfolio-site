@@ -1,4 +1,3 @@
-
 import Img from "next/image";
 import mainVisual from "../public/mainVisual.webp";
 import Header from "../components/layout/header/page";
@@ -19,7 +18,8 @@ export default function Home() {
           <div className="grid gap-6 w-4/5 mx-auto">
             <Fade direction="up" triggerOnce cascade damping={0.5}>
               <h1 className="text-4xl md:text-6xl font-semibold tracking-widest leading-normal">
-                コードとデザインの交差点で、<br />
+                コードとデザインの交差点で、
+                <br />
                 最高の体験を。
               </h1>
               <p className="text-base md:text-xl leading-normal">
@@ -33,8 +33,12 @@ export default function Home() {
         <div className={styles.mainVisualImg}>
           <Img
             src={mainVisual}
-            alt="メインビジュアルに表示れる人のイラスト画像"
+            alt="メインビジュアル"
             priority
+            width={1200}
+            height={800}
+            sizes="(max-width: 768px) 100vw, 70vw"
+            className="w-full h-auto object-contain"
           />
         </div>
       </div>

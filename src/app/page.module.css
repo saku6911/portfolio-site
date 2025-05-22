@@ -1,13 +1,14 @@
-.mainVisualImg{
+.mainVisualImg {
   position: absolute;
-  right: 0;
   bottom: 0;
+  right: 0;
   width: 100%;
+  height: auto;
   z-index: -10;
-  @media screen and (min-width:768px) { 
-    bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .mainVisualImg {
     width: 70%;
   }
 }
-
-
