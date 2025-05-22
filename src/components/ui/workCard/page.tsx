@@ -36,6 +36,8 @@ export default function WorkCard({
           className="w-full"
           width={352}
           height={211}
+          priority
+          sizes="(max-width: 768px) 100vw, 352px"
         />
         <div className="grid gap-4 px-6 py-4 items-center">
           <h3 className="font-bold text-xl h-14">{heading}</h3>

@@ -43,6 +43,7 @@ export default async function LearningPostPage(props: {
               alt="ブログの画像"
               width={352}
               height={211}
+              sizes="(max-width: 768px) 100vw, 352px"
               priority
             />
             <div
