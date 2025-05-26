@@ -1,7 +1,9 @@
+import HeadingLg from "../components/atoms/heading/headingLg";
+
 export default function NotFound() {
   return (
     <main>
-      <h1>404</h1>
+      <HeadingLg>404</HeadingLg>
       <p>ページが見つかりませんでした</p>
     </main>
   );

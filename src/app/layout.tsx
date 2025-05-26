@@ -17,6 +17,31 @@ export const metadata: Metadata = {
     "デザイナー",
     "白取優花",
   ],
+  metadataBase: new URL("https://portfolio-site-six-fawn.vercel.app/"),
+  openGraph: {
+    title: "Portfolio Site - 白取優花",
+    description:
+      "フロントエンドエンジニア兼デザイナー、白取優花のポートフォリオサイト。",
+    url: "https://portfolio-site-six-fawn.vercel.app/",
+    siteName: "Shiratori Portfolio",
+    images: [
+      {
+        url: "/og-image.webp",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Portfolio Site - 白取優花",
+    description:
+      "フロントエンドエンジニア兼デザイナー、白取優花のポートフォリオサイト。",
+    images: ["/og-image.webp"],
+    creator: "@Cndn1eHw",
+  },
 };
 
 export default function RootLayout({

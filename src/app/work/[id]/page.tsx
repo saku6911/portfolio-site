@@ -3,8 +3,9 @@ import { getWorkPagePosts } from "../../../services/getInformation";
 import { client } from "../../../libs/microcms";
 import dayjs from "dayjs";
 import Img from "next/image";
-import SubHeader from "@/components/layout/subHeader/page";
+import SubHeader from "@/components/organisms/subHeader/page";
 import { Fade } from "react-awesome-reveal";
+import HeadingLg from "../../../components/atoms/heading/headingLg";
 
 export default async function WorkPostPage(props: {
   params: Promise<{ id: string }>;
@@ -20,9 +21,7 @@ export default async function WorkPostPage(props: {
       <Fade>
         <main className="max-w-3xl mx-auto px-4 py-12">
           <article>
-            <h1 className="text-3xl md:text-4xl font-bold mb-4 max-sm:text-center">
-              {post.title}
-            </h1>
+            <HeadingLg>{post.title}</HeadingLg>
             <div className="text-sm text-gray-500 mb-6 flex items-center gap-4 border-b-1 border-solid border-b-gray-200 pb-3 max-sm:flex-col">
               <span>投稿日：{formattedDate}</span>
               {post.categories?.length > 0 && (

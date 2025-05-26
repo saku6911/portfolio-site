@@ -3,6 +3,8 @@
 import React from "react";
 import Img from "next/image";
 import { useRouter } from "next/navigation";
+import HeadingSm from "../../atoms/heading/headingSm";
+import Label from "@/components/atoms/label/page";
 
 export default function LearningCard({
   id,
@@ -39,17 +41,12 @@ export default function LearningCard({
         sizes="(max-width: 768px) 100vw, 352px"
       />
       <div className="grid gap-4 px-6 py-4 items-center">
-        <h3 className="font-bold text-xl h-14">{heading}</h3>
+        <HeadingSm>{heading}</HeadingSm>
         <p className="whitespace-pre-line">{skill}</p>
       </div>
       <div className="px-6 pt-4 pb-2">
         {categories?.map((category) => (
-          <label
-            key={category.id}
-            className="inline-block bg-gray-200 rounded-sm px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-          >
-            {category.name}
-          </label>
+          <Label key={category.id}>{category.name}</Label>
         ))}
       </div>
     </button>

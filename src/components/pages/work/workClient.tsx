@@ -5,8 +5,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
-import Heading from "../../ui/heading/page";
-import WorkCard from "../../ui/workCard/page";
+import Heading from "../../molecules/heading/page";
+import WorkCard from "../../organisms/workCard/page";
 import { Fade } from "react-awesome-reveal";
 
 type WorkProps = {

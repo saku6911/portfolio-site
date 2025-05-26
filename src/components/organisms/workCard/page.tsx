@@ -3,6 +3,7 @@
 import React from "react";
 import Img from "next/image";
 import { useRouter } from "next/navigation";
+import HeadingSm from "../../atoms/heading/headingSm";
 
 export default function WorkCard({
   id,
@@ -40,7 +41,7 @@ export default function WorkCard({
           sizes="(max-width: 768px) 100vw, 352px"
         />
         <div className="grid gap-4 px-6 py-4 items-center">
-          <h3 className="font-bold text-xl h-14">{heading}</h3>
+          <HeadingSm>{heading}</HeadingSm>
           <p className="whitespace-pre-line">{skill}</p>
         </div>
         <div className="px-6 pt-4 pb-2">

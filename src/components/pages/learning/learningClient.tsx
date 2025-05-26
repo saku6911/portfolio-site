@@ -5,9 +5,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import Heading from "../../ui/heading/page";
+import Heading from "../../molecules/heading/page";
 import { Fade } from "react-awesome-reveal";
-import LearningCard from "@/components/ui/learningCard/page";
+import LearningCard from "@/components/organisms/learningCard/page";
 
 type LearningProps = {
   posts: {

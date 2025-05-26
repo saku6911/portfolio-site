@@ -1,5 +1,6 @@
 "use client";
 
+import HeadingSm from "../../atoms/heading/headingSm";
 import React from "react";
 import Modal from "react-modal";
 
@@ -18,7 +19,6 @@ export default function SkillModal({
   onRequestClose,
   skillText = "使用スキル",
 }: ModalWindowProps) {
- 
   const skillList = skillText.split("/").filter(Boolean);
 
   return (
@@ -32,10 +32,12 @@ export default function SkillModal({
       contentLabel="アニメーション付きモーダル"
     >
       <div>
-        <h2 className="text-xl font-semibold mb-4 text-gray-800">経験年数</h2>
+        <HeadingSm>経験年数</HeadingSm>
         <ul className="space-y-2 text-gray-700 list-disc list-inside">
           {skillList.map((item, index) => (
-            <li key={index} className="leading-relaxed">{item}</li>
+            <li key={index} className="leading-relaxed">
+              {item}
+            </li>
           ))}
         </ul>
         <button
