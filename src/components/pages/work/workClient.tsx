@@ -33,7 +33,7 @@ export default function WorkClient({ posts }: WorkProps) {
           slidesPerView={3}
           grabCursor={true}
           pagination={{ clickable: true }}
-          className="h-120 w-full"
+          className="h-130 w-full"
           breakpoints={{
             350: { slidesPerView: 1 },
             780: { slidesPerView: 2, spaceBetween: 32 },

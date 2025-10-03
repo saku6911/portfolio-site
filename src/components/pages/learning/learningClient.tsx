@@ -34,7 +34,7 @@ export default function LearningClient({ posts }: LearningProps) {
           slidesPerView={3}
           grabCursor={true}
           pagination={{ clickable: true }}
-          className="h-140 w-full"
+          className="h-130 w-full"
           breakpoints={{
             350: {
               slidesPerView: 1,

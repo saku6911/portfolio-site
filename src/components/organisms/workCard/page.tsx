@@ -29,12 +29,12 @@ export default function WorkCard({
     <>
       <button
         onClick={handleClick}
-        className=" text-left max-w-sm rounded overflow-hidden shadow-lg transition-all duration-150 hover:translate-x-1 hover:translate-y-1 p-4 bg-white"
+        className="text-left max-w-sm rounded h-[450] overflow-hidden shadow-lg transition-all duration-150 hover:translate-x-1 hover:translate-y-1 p-4 bg-white"
       >
         <Img
           src={imgSrc}
           alt={imgAlt}
-          className="w-full"
+          className="w-full h-auto"
           width={352}
           height={211}
           priority
