@@ -24,8 +24,6 @@ export default function Home() {
                 最高の体験を。
               </HeadingMainvisual>
               <p className="text-base md:text-xl leading-normal">
-                デザイナー兼フロントエンドエンジニア
-                <br />
                 白取のポートフォリオサイトです。
               </p>
             </Fade>
